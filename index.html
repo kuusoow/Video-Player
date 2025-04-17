@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video">
+            <video id="video"   src="video_3.mp4"   ></video>
+        </div>
+        <div class="video-info">
+            <h1 class="videoNaem">video one</h1>
+            <p class="artisName"> artist one</p>
+        </div>
+        <div class="progress-container">
+            <div class="progrees-bar">
+                <div class="progress"></div>
+            </div>
+      
+          <div class="time">
+             <div class="curent-time">0:00</div>
+             <div class="duration">0:00</div>
+            </div>
+     </div>  
+
+     <div class="controls">
+        <button class="control-btn" id="prev-btn"> <i class ="fas fa-step-backward"></i></button>
+        <button class="control-btn " id="play"> <i class ="fas fa-play"></i></button>
+        <button class="control-btn  " id="next-btn">  <i class ="fas fa-step-forward"></i></button>
+     </div>
+
+     <div class="other-control">
+        <div class="volume-container">
+            <i class="fas fa-volume-down"></i>
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+        </div>
+        <div class="speed-container">
+            <i class="fas fa-tachometer-alt" ></i>
+            <select name="" id="speed">
+                <option value="0.5">0.5x</option>
+                <option value="0.75">0.75x</option>
+                <option value="1" selected>1x</option>
+                <option value="1.5">1.5x</option>
+            </select>
+        </div>
+     </div>
+
+    </div>
+    
+</body>
+<script src="main.js"></script>
+</html>
