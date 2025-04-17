@@ -162,4 +162,4 @@ speeds.addEventListener("change",(e)=>{
 })
 
 
-videoElement.addEventListener('loadedmetadata')
+videoElement.addEventListener('loadedmetadata' , updateprogress)
